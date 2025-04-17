@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic3D Challenge 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/traffic3d-logo.jpeg" alt="Traffic3D Challenge Logo" class="logo">
+        </div>
+        <h1>Traffic3D Challenge 2025</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#important-dates">Important Dates</a></li>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#tracks">Challenge Tracks</a></li>
+            <li><a href="#prizes">Prizes</a></li>
+            <li><a href="#workshop">Workshop</a></li>
+            <li><a href="#organizers">Organizers</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#impact">Impact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="important-dates" class="section">
+            <h2>Important Dates</h2>
+            <ul class="dates-list">
+                <li><strong>Submission Deadline:</strong> May 25, 2025, 24:00 (UTC+8)</li>
+                <li><strong>Results Notification:</strong> May 30, 2025</li>
+                <li><strong>Workshop Implementation:</strong> June 21, 2025</li>
+            </ul>
+        </section>
+
+        <section id="overview" class="section">
+            <h2>Challenge Overview</h2>
+            <p>Welcome to the Traffic3D Challenge 2025, a premier international competition focused on advancing 3D traffic scene understanding through point cloud processing. This challenge is part of the 13th International Conference on Mobile Mapping Technology (MMT 2025) and aims to bring together researchers and practitioners to tackle fundamental challenges in railway and road scene understanding.</p>
+            
+            <p>The significance of this research domain is multifaceted:</p>
+            <ol>
+                <li>Advancing autonomous vehicle perception systems through robust 3D interpretation</li>
+                <li>Enabling millimeter-accurate digital twin modeling of transportation infrastructure</li>
+                <li>Developing next-generation intelligent transportation systems with comprehensive scene understanding capabilities across diverse environmental conditions</li>
+            </ol>
+            
+            <p>As the volumetric complexity and semantic diversity of traffic-related point cloud data continue to expand exponentially, there exists an urgent methodological imperative to develop computationally efficient, geometrically precise, and semantically robust point cloud processing frameworks. Both efficient algorithms and post-processing methods are welcome in this challenge. This workshop provides a structured platform for the dissemination of algorithmic innovations, methodological advances, and empirical findings in this rapidly evolving field.</p>
+        </section>
+
+        <section id="tracks" class="section">
+            <h2>Challenge Tracks</h2>
+            <p>The Traffic3D Challenge 2025 focuses on three critical domains:</p>
+
+            <div class="track">
+                <h3>Track 1: Railway Scene Point Cloud Semantic Segmentation</h3>
+                <p><strong>Dataset: WHU-Railway3D</strong></p>
+                <ul>
+                    <li><strong>Website:</strong> <a href="https://github.com/WHU-USI3DV/WHU-Railway3D" target="_blank">https://github.com/WHU-USI3DV/WHU-Railway3D</a></li>
+                    <li><strong>Challenge:</strong>
+                        <ul>
+                            <li>(1) Urban Railway: <a href="https://www.codabench.org/competitions/5138/" target="_blank">https://www.codabench.org/competitions/5138/</a></li>
+                            <li>(2) Rural Railway: <a href="https://www.codabench.org/competitions/5140/" target="_blank">https://www.codabench.org/competitions/5140/</a></li>
+                            <li>(3) Plateau Railway: <a href="https://www.codabench.org/competitions/5142/" target="_blank">https://www.codabench.org/competitions/5142/</a></li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Description:</strong> 4.6 billion points across 30 km of railway, covering urban, rural, and plateau environments. The semantic annotation schema comprises 11 distinct categories, including critical infrastructure elements such as rails, track beds, masts, support devices, and overhead lines.</li>
+                    <li><strong>Tasks:</strong> Develop robust computational models for semantic segmentation of railway point clouds. The methodological focus encompasses addressing several domain-specific challenges: (1) the mitigation of occlusion artifacts induced by vegetation density and topographic variability; (2) the development of class-balanced learning strategies to compensate for the inherent density disparities across semantic categories; and (3) the implementation of domain generalization techniques.</li>
+                    <li><strong>Evaluation Metrics:</strong> Mean Intersection over Union (mIoU), per-category IoU scores, Overall Accuracy (OA), and category-specific performance metrics for railway-critical infrastructure elements.</li>
+                </ul>
+            </div>
+
+            <div class="track">
+                <h3>Track 2: Road Scene Point Cloud Semantic/Instance Segmentation</h3>
+                <p><strong>Dataset: WHU-Urban3D</strong></p>
+                <ul>
+                    <li><strong>Website:</strong> <a href="https://whu3d.com" target="_blank">https://whu3d.com</a></li>
+                    <li><strong>Challenge:</strong> [To be added]</li>
+                    <li><strong>Data Description:</strong> Integrated ALS and MLS point clouds covering over 3.6 million square meters of diverse urban typologies. The dataset is structured into more than 80 distinct urban blocks with exhaustive semantic annotations, providing complementary perspective modes (vertical and horizontal) of urban scenes.</li>
+                    <li><strong>Tasks:</strong> Develop integrated frameworks for concurrent semantic and instance segmentation of complex urban point clouds. The methodological challenges include: (1) accurate delineation of object boundaries in occluded urban canyons; (2) reliable detection and segmentation of small-scale urban elements with limited point representations; and (3) effective fusion of complementary information from multi-perspective scanning modalities.</li>
+                    <li><strong>Evaluation Metrics:</strong> Mean Intersection over Union (mIoU), per-category IoU values, Overall Accuracy (OA), mean coverage (mCov), mean weighted coverage (mWCov), mean precision (mPre), mean recall (mRec), and mean F1-score (mF1).</li>
+                </ul>
+            </div>
+
+            <div class="track">
+                <h3>Track 3: Road Scene Lane Mapping</h3>
+                <p><strong>Dataset: WHU-Lane</strong></p>
+                <ul>
+                    <li><strong>Website:</strong> <a href="https://github.com/WHU-USI3DV/LaneMapping" target="_blank">https://github.com/WHU-USI3DV/LaneMapping</a></li>
+                    <li><strong>Challenge:</strong> [To be added]</li>
+                    <li><strong>Data Description:</strong> High-resolution Mobile Laser Scanning (MLS) systems capturing over 98 kilometers of road infrastructure. The annotation schema provides granular classification of lane markings, differentiating between discontinuous and continuous demarcations, with instance-level identification for individual lane segments.</li>
+                    <li><strong>Tasks:</strong> Develop geometrically precise and topologically consistent methods for extracting lane polylines and their associated semantic attributes directly from MLS point clouds. The methodological emphasis is on generating accurate and topologically valid lane network representations without requiring extensive post-processing operations.</li>
+                    <li><strong>Evaluation Metrics:</strong> Precision, recall, and F1-scores for both geometric correspondence and semantic classification accuracy. The evaluation methodology will particularly emphasize algorithmic robustness to complex intersection geometries, discontinuous lane representations, and variable road surface conditions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="prizes" class="section">
+            <h2>Prizes</h2>
+            <p>We are thankful to our sponsor for providing the following prizes. The prize award will be granted to the Top 3 individuals and teams on the leaderboard that provide valid submissions.</p>
+            <ul class="prizes-list">
+                <li><strong>1st Place:</strong> ¥10,000 CNY</li>
+                <li><strong>2nd Place:</strong> ¥6,000 CNY</li>
+                <li><strong>3rd Place:</strong> ¥4,000 CNY</li>
+            </ul>
+        </section>
+
+        <section id="workshop" class="section">
+            <h2>Workshop Format</h2>
+            <p>The workshop will implement a hybrid participation model, accommodating both in-person attendance and virtual engagement to maximize accessibility and international participation. The programmatic structure will comprise:</p>
+            <ul>
+                <li>Invited keynote presentations from recognized domain experts</li>
+                <li>Formal recognition ceremonies for competition winners</li>
+                <li>Technical presentations from winning teams detailing their methodological approaches</li>
+                <li>A structured panel discussion addressing emerging research directions</li>
+            </ul>
+
+            <h3>Schedule</h3>
+            <table class="schedule-table">
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr>
+                    <td>08:30-08:35</td>
+                    <td>Welcome Introduction</td>
+                </tr>
+                <tr>
+                    <td>08:35-09:20</td>
+                    <td>Invited Talk (Talk 1)</td>
+                </tr>
+                <tr>
+                    <td>09:20-10:05</td>
+                    <td>Invited Talk (Talk 2)</td>
+                </tr>
+                <tr>
+                    <td>10:05-10:30</td>
+                    <td>Coffee break</td>
+                </tr>
+                <tr>
+                    <td>10:30-10:40</td>
+                    <td>Awarding Ceremony</td>
+                </tr>
+                <tr>
+                    <td>10:40-11:00</td>
+                    <td>Winner Talk (Track 1) + Q&A</td>
+                </tr>
+                <tr>
+                    <td>11:00-11:20</td>
+                    <td>Winner Talk (Track 2) + Q&A</td>
+                </tr>
+                <tr>
+                    <td>11:20-11:40</td>
+                    <td>Winner Talk (Track 3) + Q&A</td>
+                </tr>
+                <tr>
+                    <td>11:40-12:00</td>
+                    <td>Panel Discussion</td>
+                </tr>
+                <tr>
+                    <td>12:00-12:05</td>
+                    <td>Closing Remarks</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="organizers" class="section">
+            <h2>Organizing Committee</h2>
+            
+            <h3>Primary Organizer</h3>
+            <div class="organizer">
+                <p><strong>Zhen Dong:</strong> Professor and Head of 3S (GNSS/RS/GIS) Integration Department, LIESMARS, Wuhan University. His research interests include 3D computer vision, 3D reconstruction, scene understanding, point cloud processing, and their applications in intelligent transportation systems, digital twin cities, urban sustainable development, and robotics. Email: dongzhenwhu@whu.edu.cn</p>
+            </div>
+
+            <h3>Co-Organizers</h3>
+            <div class="organizer">
+                <p><strong>Xiaoxin Mi:</strong> Associate Professor, School of Computer Science and Artificial Intelligence, Wuhan University of Technology. Her research interests lie at the intersection of 3D computer vision and urban understanding, particularly including scene understanding and modeling, point cloud processing, and their applications in intelligent transportation systems (ITS).</p>
+            </div>
+            <div class="organizer">
+                <p><strong>Hong Xie:</strong> Associate Professor, School of Geodesy and Geomatics, Wuhan University. His research interests include target detection based on image deep learning, point cloud data quality improvement, point cloud information extraction, and model reconstruction.</p>
+            </div>
+            <div class="organizer">
+                <p><strong>Jian Zhou:</strong> Associate Researcher, LIESMARS, Wuhan University. His research interests include high-definition maps, computer vision, and autonomous vehicles.</p>
+            </div>
+            <div class="organizer">
+                <p><strong>Bo Qiu:</strong> M.S. Student, LIESMARS, Wuhan University. His research interests include 3D computer vision and their applications in intelligent transportation systems.</p>
+            </div>
+            <div class="organizer">
+                <p><strong>Chong Liu:</strong> Ph.D. Student, LIESMARS, Wuhan University. His research interests lie in the field of point cloud processing and intelligent transportation systems.</p>
+            </div>
+            <div class="organizer">
+                <p><strong>Zhen Cao:</strong> Ph.D. Student, LIESMARS, Wuhan University. His research interests lie in the field of 3D computer vision, point cloud completion, and scene understanding.</p>
+            </div>
+        </section>
+
+        <section id="speakers" class="section">
+            <h2>Confirmed Speakers</h2>
+            <div class="speaker">
+                <p><strong>Hong Xie:</strong> Associate Professor, School of Geodesy and Geomatics, Wuhan University. Topic: Multi-station Point Cloud Fusion for Complete Scene Representation.</p>
+            </div>
+            <div class="speaker">
+                <p><strong>Xiaoxin Mi:</strong> Associate Professor, School of Computer Science and Artificial Intelligence, Wuhan University of Technology. Topic: Urban Road Perception and Structural Modeling.</p>
+            </div>
+            <div class="speaker">
+                <p><strong>Yuzhou Zhou:</strong> Ph.D. Student, Department of Computer Science, University of Oxford, UK. Topic: Street Scene Modeling and Editing.</p>
+            </div>
+        </section>
+
+        <section id="impact" class="section">
+            <h2>Broader Impact</h2>
+            <p>The intellectual contributions and methodological frameworks developed through this challenge have the potential to catalyze significant technological and societal advancements across multiple domains:</p>
+            <ul>
+                <li>Enhanced semantic understanding of transportation infrastructure facilitates the development of safer autonomous navigation systems, potentially reducing the approximately 1.35 million annual traffic fatalities worldwide.</li>
+                <li>Precise digital representations of transportation networks enable more efficient infrastructure maintenance scheduling, potentially yielding substantial economic benefits.</li>
+                <li>The methods developed can contribute to more accurate carbon footprint assessments of transportation networks, supporting evidence-based policies for environmental sustainability.</li>
+            </ul>
+
+            <h3>Ethical Considerations</h3>
+            <p>The datasets utilized in this challenge have been collected and annotated in strict accordance with applicable privacy legislation and regulatory frameworks. All personally identifiable information has been methodically anonymized to ensure the protection of individual privacy rights and community interests. The organizing committee will implement rigorous protocols to ensure that the dataset utilization remains exclusively within the intended research domain of point cloud-based traffic scene understanding.</p>
+            
+            <p>For more information, please contact the organizing committee at zhen.cao@whu.edu.cn.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Traffic3D Challenge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
